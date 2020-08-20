@@ -21,6 +21,8 @@
 
 
         <link href="../recursos/css/font-awesome/css/all.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="../recursos/js/lib/datatables/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../recursos/js/lib/datatables/Buttons-1.5.1/css/buttons.bootstrap4.min.css"/>
 
 
         <title>.:: Prueba Tecnica Hernan Gonzalez Poloche ::.</title>
@@ -96,12 +98,28 @@
             <?php require 'layout/footer.php'; ?>
 
 
+            <!-- Zona modal -->
+           <div class="modal fade" id="ModalInfo" tabindex="-1" role="dialog" aria-labelledby="ModalTitulo" aria-hidden="true">
+               <div class="modal-dialog modal-lg" role="document">
+                   <div class="modal-content">
+                       <div class="modal-header bg-secondary border-secondary text-white">
+                           <h5 class="modal-title" id="ModalTitulo"></h5>
+                           <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                               <span aria-hidden="true">&times;</span>
+                           </button>
+                       </div>
+                       <div class="modal-body">
+                           <p id="ModalCuerpo"></p>
+                       </div>
+                   </div>
+               </div>
+           </div>
         <script src="../recursos/js/lib/jquery-3.3.1.min.js" type="text/javascript"></script>
         <script src="../recursos/js/lib/jquery-ui.min.js"></script>
-        <script src="../recursos/js/lib/popper.min.js" type="text/javascript"></script>
         <script src="../recursos/js/lib/bootstrap/js/bootstrap.min.js"></script>
         <script src="../recursos/js/lib/bootbox.min.js"></script>
         <script src="../recursos/js/lib/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <script src="../recursos/js/lib/datatables/datatables.min.js"></script>
         <script src="../recursos/js/lib/holder.min.js"></script>
         <script src="../recursos/js/lib/react.min.js"></script>
         <script src="../recursos/js/lib/react-dom.min.js"></script>

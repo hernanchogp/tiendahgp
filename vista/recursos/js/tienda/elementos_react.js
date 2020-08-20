@@ -4,6 +4,7 @@
 * Construye las columnas de forma dinamica
 */
 var ColumnasDinamicas = function ColumnasDinamicas(props) {
+  console.log(props.valores);
   return React.createElement(
     "tr",
     null,

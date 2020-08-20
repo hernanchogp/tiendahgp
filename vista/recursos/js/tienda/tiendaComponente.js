@@ -18,7 +18,10 @@ var Tienda = function (_React$Component) {
 
 		_this.eventoSubmit = _this.eventoSubmit.bind(_this);
 
-		_this.state = {};
+		_this.state = {
+			tiendas: props.tiendas
+
+		};
 		return _this;
 	}
 
@@ -31,9 +34,28 @@ var Tienda = function (_React$Component) {
 		key: "render",
 		value: function render() {
 
-			/*var columnas =this.props.tiendas.map((tienda, i) => (
-     <ColumnasDinamicas valores={tienda} key={i} />
-   ));//*/
+			var columnas = this.props.tiendas.map(function (tienda, i) {
+				return React.createElement(
+					"tr",
+					null,
+					React.createElement(
+						"td",
+						null,
+						tienda.id
+					),
+					React.createElement(
+						"td",
+						null,
+						tienda.nombre
+					),
+					React.createElement(
+						"td",
+						null,
+						tienda.fecha_apertura
+					),
+					React.createElement("td", null)
+				);
+			}); //*/
 
 			return React.createElement(
 				"div",
@@ -56,7 +78,7 @@ var Tienda = function (_React$Component) {
 							React.createElement(
 								"table",
 								{
-									"class": "table text-center",
+									"class": "table text-center dtable",
 									id: "datatableTienda",
 									className: "table table-bordered table-striped table-responsive-sm table-hover small table-sm w-100"
 								},
@@ -87,6 +109,11 @@ var Tienda = function (_React$Component) {
 											"Accion"
 										)
 									)
+								),
+								React.createElement(
+									"tbody",
+									null,
+									columnas
 								)
 							)
 						)

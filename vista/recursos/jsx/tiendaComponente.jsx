@@ -4,6 +4,7 @@ class Tienda extends React.Component{
 		this.eventoSubmit = this.eventoSubmit.bind(this);
 
 		this.state = {
+			tiendas: props.tiendas
 
 	 }
 	}
@@ -15,8 +16,14 @@ class Tienda extends React.Component{
 
 	render(){
 
-		/*var columnas =this.props.tiendas.map((tienda, i) => (
-    <ColumnasDinamicas valores={tienda} key={i} />
+	var columnas =this.props.tiendas.map((tienda, i) => (
+
+      <tr>
+				<td>{tienda.id}</td>
+				<td>{tienda.nombre}</td>
+				<td>{tienda.fecha_apertura}</td>
+					<td></td>
+				</tr>
   ));//*/
 
 		return(
@@ -28,7 +35,7 @@ class Tienda extends React.Component{
 	        <div className="row m-2">
 	          <div class="table-responsive">
 	            <table
-	              class="table text-center"
+	              class="table text-center dtable"
 	              id="datatableTienda"
 	              className="table table-bordered table-striped table-responsive-sm table-hover small table-sm w-100"
 	            >
@@ -40,7 +47,7 @@ class Tienda extends React.Component{
                   	<th scope="col">Accion</th>
 	                </tr>
 	              </thead>
-
+								<tbody>{columnas}</tbody>
 	            </table>
 	          </div>
 	        </div>
