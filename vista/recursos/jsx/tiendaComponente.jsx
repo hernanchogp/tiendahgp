@@ -22,14 +22,14 @@ class Tienda extends React.Component{
 		return(
 			<div className="card border-secondary mt-2">
 	      <div className="card-header bg-secondary border-secondary text-white">
-	        <i class="fas fa-paperclip" />&nbsp; Listado de Tiendas
+	        <i class="fas fa-store" />&nbsp; Listado de Tiendas
 	      </div>
 	      <div className="card-body">
 	        <div className="row m-2">
 	          <div class="table-responsive">
 	            <table
 	              class="table text-center"
-	              id="datatablesinscripciones"
+	              id="datatableTienda"
 	              className="table table-bordered table-striped table-responsive-sm table-hover small table-sm w-100"
 	            >
 	              <thead>

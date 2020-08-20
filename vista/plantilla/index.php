@@ -63,8 +63,11 @@
 
 
             <main role="main" class="row" style="margin-top: 1%;margin-left: auto;">
+              <div  class="col-1 col-sm-1 col-md-1">
 
-                <div id="seccionCentral" class="col-12 col-sm-12 col-md-12 col-lg-10 placeholder">
+              </div>
+
+                <div id="seccionCentral" class="col-12 col-sm-12 col-md-12 col-lg-10">
 
 
                         <div id="bodycontenido">
@@ -74,6 +77,11 @@
 
 
                 </div>
+
+                <div  class="col-1 col-sm-1 col-md-1">
+
+                </div>
+
             </main>
             <!-- Loader -->
             <center>

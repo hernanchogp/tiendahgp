@@ -41,7 +41,7 @@ var Tienda = function (_React$Component) {
 				React.createElement(
 					"div",
 					{ className: "card-header bg-secondary border-secondary text-white" },
-					React.createElement("i", { "class": "fas fa-paperclip" }),
+					React.createElement("i", { "class": "fas fa-store" }),
 					"\xA0 Listado de Tiendas"
 				),
 				React.createElement(
@@ -57,7 +57,7 @@ var Tienda = function (_React$Component) {
 								"table",
 								{
 									"class": "table text-center",
-									id: "datatablesinscripciones",
+									id: "datatableTienda",
 									className: "table table-bordered table-striped table-responsive-sm table-hover small table-sm w-100"
 								},
 								React.createElement(
