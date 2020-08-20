@@ -1,0 +1,14 @@
+{
+  "babelMapsPath":                    "",
+  "babelMapsAddUrl":                  false,
+  "babelSourcePath":                  "",
+  "projectRoot":                      true,
+  "babelTranspilePath":               "../js/tienda",
+  "createMap":                        false,
+  "createTargetDirectories":          true,
+  "createTranspiledCode":             true,
+  "disableWhenNoBabelrcFileInPath":   true,
+  "suppressSourcePathMessages":       false,
+  "suppressTranspileOnSaveMessages":  false,
+  "transpileOnSave":                  true
+}

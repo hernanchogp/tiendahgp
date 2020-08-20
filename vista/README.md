@@ -1,0 +1,1 @@
+Seccion de las vistas del sistema, donde se ubican los recuersos y logica del cliente
