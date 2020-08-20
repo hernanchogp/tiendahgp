@@ -18,6 +18,7 @@ var Tienda = function (_React$Component) {
 
 		_this.eventoSubmit = _this.eventoSubmit.bind(_this);
 
+		_this.state = {};
 		return _this;
 	}
 
@@ -30,10 +31,67 @@ var Tienda = function (_React$Component) {
 		key: "render",
 		value: function render() {
 
+			/*var columnas =this.props.tiendas.map((tienda, i) => (
+     <ColumnasDinamicas valores={tienda} key={i} />
+   ));//*/
+
 			return React.createElement(
 				"div",
-				{ id: "test", className: "container" },
-				"texto"
+				{ className: "card border-secondary mt-2" },
+				React.createElement(
+					"div",
+					{ className: "card-header bg-secondary border-secondary text-white" },
+					React.createElement("i", { "class": "fas fa-paperclip" }),
+					"\xA0 Listado de Tiendas"
+				),
+				React.createElement(
+					"div",
+					{ className: "card-body" },
+					React.createElement(
+						"div",
+						{ className: "row m-2" },
+						React.createElement(
+							"div",
+							{ "class": "table-responsive" },
+							React.createElement(
+								"table",
+								{
+									"class": "table text-center",
+									id: "datatablesinscripciones",
+									className: "table table-bordered table-striped table-responsive-sm table-hover small table-sm w-100"
+								},
+								React.createElement(
+									"thead",
+									null,
+									React.createElement(
+										"tr",
+										null,
+										React.createElement(
+											"th",
+											{ scope: "col" },
+											"ID"
+										),
+										React.createElement(
+											"th",
+											{ scope: "col" },
+											"Nombre"
+										),
+										React.createElement(
+											"th",
+											{ scope: "col" },
+											"Fecha Apertura"
+										),
+										React.createElement(
+											"th",
+											{ scope: "col" },
+											"Accion"
+										)
+									)
+								)
+							)
+						)
+					)
+				)
 			);
 		}
 	}]);

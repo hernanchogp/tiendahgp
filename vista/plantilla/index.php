@@ -99,6 +99,7 @@
         <script src="../recursos/js/lib/react-dom.min.js"></script>
         <script src="../recursos/js/lib/datepicker.min.js"></script>
         <script src="../recursos/js/lib/datepicker.es-ES.js"></script>
+        <script type="text/javascript" src="../recursos/js/tienda/elementos_react.js"></script>
         <script type="text/javascript" src="../recursos/js/tienda/tienda.js"></script>
         <script type="text/javascript" src="../recursos/js/tienda/tiendaComponente.js"></script>
         <script type="text/javascript" src="../recursos/js/tienda/index.js"></script>
