@@ -66,13 +66,13 @@
 
                 <div id="seccionCentral" class="col-12 col-sm-12 col-md-12 col-lg-10 placeholder">
 
-                    <div class="row-fluid"  id="bodyMenu">
-                        <div id="bodyInicio">
+
+                        <div id="bodycontenido">
 
                         </div>
 
-                        <div id="rs" class="table-responsive"></div>
-                    </div>
+
+
                 </div>
             </main>
             <!-- Loader -->
@@ -99,6 +99,10 @@
         <script src="../recursos/js/lib/react-dom.min.js"></script>
         <script src="../recursos/js/lib/datepicker.min.js"></script>
         <script src="../recursos/js/lib/datepicker.es-ES.js"></script>
+        <script type="text/javascript" src="../recursos/js/tienda/tienda.js"></script>
+        <script type="text/javascript" src="../recursos/js/tienda/tiendaComponente.js"></script>
+        <script type="text/javascript" src="../recursos/js/tienda/index.js"></script>
+
 
     </body>
 
